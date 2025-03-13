@@ -10,8 +10,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #a80404;
-            color: #e6e6e6;
+            background-color: #6c0000;
+            color: #f4f4f4;
             line-height: 1.6;
         }
 
@@ -20,13 +20,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #c80505;
+            background-color: #800000;
             padding: 10px 20px;
-            color: rgb(98, 98, 98);
+            color: white;
         }
 
         .navbar a {
-            color: rgb(98, 98, 98);
+            color: white;
             text-decoration: none;
             margin: 0 10px;
             font-weight: bold;
@@ -37,44 +37,68 @@
         }
 
         /* Main Content */
-        .container {
+        .main-content {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #910202;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
         h1 {
-            color: #c80505;
+            color: #6c0000;
             margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #c80505;
-            margin-top: 40px;
         }
 
         p {
             margin-bottom: 20px;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #0073b1;
+        .about-me-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #b10000;
+            color: white;
             text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
 
-        a:hover {
+        .about-me-button:hover {
+            background-color: #800000;
+        }
+
+        /* Cards Section */
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .card h2 {
+            color: #800000;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            color: #800000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card a:hover {
             text-decoration: underline;
         }
     </style>
@@ -86,23 +110,34 @@
         <div>
             <a href="blog.html">Blog</a>
             <a href="projects.html">Projects</a>
-            <a href="teaching.html">Teaching</a>
+            <a href="outreach.html">Teaching</a>
         </div>
     </div>
 
     <!-- Main Content -->
-    <div class="container">
+    <div class="main-content">
         <h1>Thato Thapo</h1>
         <p>
             Masters graduate in Applied Mathematics from the University of Cape Town focusing on Theoretical Cosmology. 
             A passion for physics and championing science outreach.
         </p>
+        <a href="about.html" class="about-me-button">About Me</a>
+    </div>
 
-        <h2>About Me</h2>
-        <p>
-            I am passionate about exploring the mysteries of the universe and sharing my knowledge through teaching and outreach. 
-            My research focuses on theoretical cosmology, and I enjoy engaging with the scientific community to promote science education.
-        </p>
+    <!-- Cards Section -->
+    <div class="cards">
+        <div class="card">
+            <h2><a href="blog.html">Latest Blog Posts</a></h2>
+            <p>Explore my latest thoughts and writings on physics, cosmology, and science outreach.</p>
+        </div>
+        <div class="card">
+            <h2><a href="projects.html">Recent Projects</a></h2>
+            <p>Check out my recent projects in applied mathematics and theoretical cosmology.</p>
+        </div>
+        <div class="card">
+            <h2><a href="teaching.html">Teaching and Tutoring</a></h2>
+            <p>Learn about my teaching philosophy and tutoring experiences.</p>
+        </div>
     </div>
 </body>
 </html>
