@@ -50,12 +50,29 @@ body::before {
 
 /* Main Content */
 .main-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    text-align: center;
     position: relative; /* Ensure it stays above the overlay */
     z-index: 1;
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.profile-image {
+    width: 150px; /* Approximately 5cm */
+    height: 150px; /* Approximately 5cm */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 20px; /* Space between image and text */
+    border: 3px solid #f4f4f4; /* Optional: Add a border */
+}
+
+.profile-text {
+    flex: 1;
+    text-align: left; /* Align text to the left */
 }
 
 h1 {
