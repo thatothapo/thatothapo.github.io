@@ -52,7 +52,7 @@ body::before {
 .main-content {
     max-width: 1200px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 0 10cm; /* Push content in by 10cm on both sides */
     position: relative; /* Ensure it stays above the overlay */
     z-index: 1;
 }
@@ -63,17 +63,19 @@ body::before {
 }
 
 .profile-image {
-    width: 150px; /* Approximately 5cm */
-    height: 150px; /* Approximately 5cm */
+    width: 150px; /* Approximately 5cm in height */
+    height: 150px; /* Approximately 5cm in height */
+    object-fit: cover; /* Crop the image to fit */
     border-radius: 50%; /* Make the image circular */
     margin-right: 20px; /* Space between image and text */
-    border: 3px solid #f4f4f4; /* Optional: Add a border */
+    border: 3px solid rgba(128, 0, 0, 0.8); /* Border color matches card background */
 }
 
 .profile-text {
     flex: 1;
     text-align: left; /* Align text to the left */
 }
+
 
 h1 {
     color: #f4f4f4;
