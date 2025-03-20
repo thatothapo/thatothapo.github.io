@@ -37,6 +37,7 @@ body::before {
     z-index: 1;
 }
 
+/*
 .navbar a {
     color: white;
     text-decoration: none;
@@ -46,6 +47,71 @@ body::before {
 
 .navbar a:hover {
     text-decoration: underline;
+}
+*/
+
+/* Menu Toggle */
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: white; /* Ensure the icon is visible */
+}
+
+/* Navbar Name */
+.navbar-name {
+    margin-right: auto; /* Push name to the right */
+}
+
+.navbar-name a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Menu */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidebar by default */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(128, 0, 0, 0.9);
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0; /* Show sidebar when active */
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Main Content */
@@ -193,42 +259,7 @@ p {
     margin-top: 20px;
 }
 
-/* Menu Toggle */
-.menu-toggle {
-    display: none; /* Hide by default */
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 20px;
-}
 
-/* Sidebar Menu */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Hide sidebar by default */
-    width: 250px;
-    height: 100%;
-    background-color: rgba(128, 0, 0, 0.9);
-    padding-top: 60px;
-    transition: left 0.3s ease;
-    z-index: 1000;
-}
-
-.sidebar.active {
-    left: 0; /* Show sidebar when active */
-}
-
-.sidebar a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.sidebar a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {

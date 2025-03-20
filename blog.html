@@ -9,12 +9,25 @@
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="index.html">Thato Thapo</a>
-        <div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Menu toggle icon -->
+        <div class="navbar-name">
+            <a href="index.html">Thato Thapo</a>
+        </div>
+        <div class="navbar-links">
             <a href="blog.html">Blog</a>
             <a href="projects.html">Projects</a>
             <a href="outreach.html">Outreach and Teaching</a>
         </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="affiliations.html">Affiliations</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+        <a href="outreach.html">Outreach and Teaching</a>
     </div>
 
     <!-- Main Content -->
@@ -22,5 +35,13 @@
         <h1>Blog</h1>
         <p>Welcome to my blog! Here, I share my thoughts and experiences.</p>
     </div>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
