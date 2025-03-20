@@ -85,6 +85,22 @@ body::before {
     text-decoration: underline;
 }
 
+/* Overlay for Sidebar */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Below the sidebar but above other content */
+}
+
+.overlay.active {
+    display: block; /* Show overlay when sidebar is active */
+}
+
 /* Sidebar Menu */
 .sidebar {
     position: fixed;
@@ -95,13 +111,12 @@ body::before {
     background-color: rgba(128, 0, 0, 0.9);
     padding-top: 60px;
     transition: left 0.3s ease;
-    z-index: 1000;
+    z-index: 1000; /* Above the overlay */
 }
 
 .sidebar.active {
     left: 0; /* Show sidebar when active */
 }
-
 .sidebar a {
     display: block;
     padding: 15px 20px;

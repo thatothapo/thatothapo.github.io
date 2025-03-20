@@ -40,8 +40,23 @@
     <script>
         function toggleMenu() {
             const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
             sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
         }
+
+        // Close sidebar when clicking outside of it
+        document.addEventListener('click', function (event) {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            // Check if the click is outside the sidebar and menu toggle
+            if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>

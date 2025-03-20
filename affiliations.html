@@ -93,7 +93,7 @@
                 <div class="card">
                     <h3>Prof Bret Underwood</h3>
                     <p>M.Sc. Supervisor</p>
-                    <a href="https://www.plu.edu/physics/staff/bret-underwood/" target="_blank" class="see-more">See more</a>
+                    <a href="https://sites.google.com/view/bret-underwood/home" target="_blank" class="see-more">See more</a>
                 </div>
                 <div class="card">
                     <h3>Dr. Bishop Mongwane</h3>
@@ -118,8 +118,23 @@
     <script>
         function toggleMenu() {
             const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
             sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
         }
+
+        // Close sidebar when clicking outside of it
+        document.addEventListener('click', function (event) {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            // Check if the click is outside the sidebar and menu toggle
+            if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>
