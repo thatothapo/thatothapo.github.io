@@ -52,7 +52,7 @@ body::before {
 .main-content {
     max-width: 1200px;
     margin: 50px auto;
-    padding: 0 10cm; /* Push content in by 10cm on both sides */
+    padding: 0 7cm; /* Push content in by 7cm on both sides */
     position: relative; /* Ensure it stays above the overlay */
     z-index: 1;
 }
@@ -63,12 +63,12 @@ body::before {
 }
 
 .profile-image {
-    width: 150px; /* Approximately 5cm in height */
-    height: 150px; /* Approximately 5cm in height */
+    width: 250px; /* Change width */
+    height: 250px; /* Change height */
     object-fit: cover; /* Crop the image to fit */
     border-radius: 50%; /* Make the image circular */
     margin-right: 20px; /* Space between image and text */
-    border: 3px solid rgba(128, 0, 0, 0.8); /* Border color matches card background */
+    border: 3px solid rgba(128, 0, 0, 0.45); /* Border color matches card background */
 }
 
 .profile-text {
