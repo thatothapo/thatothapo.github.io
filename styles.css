@@ -136,3 +136,57 @@ p {
 .card a:hover {
     text-decoration: underline;
 }
+
+/* Affiliations Page Styles */
+.affiliations-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.column h2 {
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.column .card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(128, 0, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column .card h3 {
+    color: #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.column .card p {
+    color: #f4f4f4;
+    margin-bottom: 15px;
+}
+
+.see-more {
+    display: block;
+    text-align: right;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
