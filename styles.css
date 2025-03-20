@@ -16,7 +16,7 @@ body {
 /* Overlay to reduce image opacity */
 body::before {
     content: '';
-    position: absolute;
+    position: fixed; /* Change from absolute to fixed */
     top: 0;
     left: 0;
     width: 100%;
@@ -142,6 +142,7 @@ p {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    gap: 90px; /* Add space between columns */
 }
 
 .column {
@@ -172,15 +173,16 @@ p {
     margin-bottom: 15px;
 }
 
-.see-more {
+/* See More Link */
+.column .card .see-more {
     display: block;
     text-align: right;
-    color: #f4f4f4;
+    color: #0073b1; /* Blue link color */
     text-decoration: none;
     font-weight: bold;
 }
 
-.see-more:hover {
+.column .card .see-more:hover {
     text-decoration: underline;
 }
 
@@ -189,4 +191,52 @@ p {
     display: flex;
     gap: 10px; /* Space between buttons */
     margin-top: 20px;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Sidebar Menu */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidebar by default */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(128, 0, 0, 0.9);
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0; /* Show sidebar when active */
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show menu toggle on smaller screens */
+    }
+
+    .navbar div:not(.menu-toggle) {
+        display: none; /* Hide regular navigation links on smaller screens */
+    }
 }
