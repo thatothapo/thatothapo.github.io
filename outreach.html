@@ -17,6 +17,7 @@
             <a href="blog.html">Blog</a>
             <a href="projects.html">Projects</a>
             <a href="outreach.html">Outreach and Teaching</a>
+            <a href="private-tutoring.html">Private Tutoring</a> <!-- New link -->
         </div>
     </div>
 
@@ -26,6 +27,7 @@
         <a href="blog.html">Blog</a>
         <a href="projects.html">Projects</a>
         <a href="outreach.html">Outreach and Teaching</a>
+        <a href="private-tutoring.html">Private Tutoring</a> <!-- New link -->
         <a href="about.html">About Me</a>
         <a href="affiliations.html">Affiliations</a>
     </div>
@@ -36,6 +38,11 @@
     <!-- Main Content -->
     <div class="main-content">
         <h1>Outreach and Teaching</h1>
+        <p>
+            Below you can read up on my teaching and tutoring experience, as well as the outreach activities I have been a part of. 
+            I also offer <strong>private tutoring</strong> services which you can click below to learn more about.
+        </p>
+        <a href="private-tutoring.html" class="about-me-button">Learn More About My Private Tutoring Services</a>
 
         <!-- Experience Container -->
         <div class="experience-container">
@@ -118,8 +125,8 @@
             const overlay = document.getElementById('overlay');
             const menuToggle = document.querySelector('.menu-toggle');
 
-            // Check if the click is outside the sidebar and not on the menu toggle
-            if (!sidebar.contains(event.target)) {
+            // Check if the click is outside the sidebar and menu toggle
+            if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
                 sidebar.classList.remove('active');
                 overlay.classList.remove('active');
             }
