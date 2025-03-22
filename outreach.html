@@ -23,17 +23,84 @@
     <!-- Sidebar Menu -->
     <div class="sidebar" id="sidebar">
         <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="affiliations.html">Affiliations</a>
         <a href="blog.html">Blog</a>
         <a href="projects.html">Projects</a>
         <a href="outreach.html">Outreach and Teaching</a>
+        <a href="about.html">About Me</a>
+        <a href="affiliations.html">Affiliations</a>
     </div>
 
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
     <!-- Main Content -->
-    <div class="container">
+    <div class="main-content">
         <h1>Outreach and Teaching</h1>
-        <p>Here, I share my outreach and teaching activities.</p>
+
+        <!-- Experience Container -->
+        <div class="experience-container">
+            <!-- Teaching Assistant at UCT -->
+            <div class="experience-card">
+                <h2>Teaching Assistant</h2>
+                <p><strong>Department of Mathematics and Applied Mathematics, University of Cape Town</strong></p>
+                <p><strong>2022–2025</strong></p>
+                <p>
+                    Courses: MAM2000W, MAM2040F, MAM1043H, MAM1010F (Linear Algebra, Differential Equations, Mathematical Modelling and Dynamics, and Financial Mathematics).
+                </p>
+                <p>
+                    Responsibilities: Weekly tutorial sessions, grading tests, and exams.
+                </p>
+            </div>
+
+            <!-- Teaching Assistant at UCT Physics Department -->
+            <div class="experience-card">
+                <h2>Teaching Assistant</h2>
+                <p><strong>Department of Physics, University of Cape Town</strong></p>
+                <p><strong>2023–2025</strong></p>
+                <p>
+                    Main TA for PHY1013F (Physics for Engineers).
+                </p>
+                <p>
+                    Responsibilities: Tutoring course material, setting up and running weekly help sessions, grading tests and exams.
+                </p>
+                <p>
+                    TA for PHY1031F and PHY1013S (General Physics and Physics for Engineers).
+                </p>
+                <p>
+                    Responsibilities: Tutoring and lab demonstrations, grading lab reports.
+                </p>
+            </div>
+
+            <!-- Academic Training Internship Programme -->
+            <div class="experience-card">
+                <h2>Academic Training Internship Programme (ATIP)</h2>
+                <p><strong>Department of Mathematics and Applied Mathematics, University of Cape Town</strong></p>
+                <p><strong>2023</strong></p>
+                <p>
+                    Training for individuals pursuing lecturing in the sciences (mainly mathematics) in the future.
+                </p>
+            </div>
+
+            <!-- Volunteer Tutor at Golden Future Project -->
+            <div class="experience-card">
+                <h2>Volunteer Tutor</h2>
+                <p><strong>Golden Future Project, University of Cape Town</strong></p>
+                <p><strong>2018–Present</strong></p>
+                <p>
+                    Tutored high school mathematics and physics, and provided computer literacy sessions.
+                </p>
+            </div>
+
+            <!-- Volunteer Tutor at The Rising Star Project -->
+            <div class="experience-card">
+                <h2>Volunteer Tutor</h2>
+                <p><strong>The Rising Star Project, SAAO (South African Astronomical Observatory), Thandokhulu High School</strong></p>
+                <p><strong>2023–Present</strong></p>
+                <p>
+                    Tutored physics to matriculants.
+                </p>
+            </div>
+        </div>
     </div>
 
     <!-- JavaScript for Menu Toggle -->
@@ -51,8 +118,8 @@
             const overlay = document.getElementById('overlay');
             const menuToggle = document.querySelector('.menu-toggle');
 
-            // Check if the click is outside the sidebar and menu toggle
-            if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+            // Check if the click is outside the sidebar and not on the menu toggle
+            if (!sidebar.contains(event.target)) {
                 sidebar.classList.remove('active');
                 overlay.classList.remove('active');
             }

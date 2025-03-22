@@ -286,3 +286,34 @@ p {
         display: none; /* Hide regular navigation links on smaller screens */
     }
 }
+
+/* Experience Container */
+.experience-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.experience-card {
+    background-color: rgba(128, 0, 0, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card h2 {
+    color: #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.experience-card p {
+    color: #f4f4f4;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.experience-card strong {
+    color: #f4f4f4;
+    font-weight: bold;
+}
