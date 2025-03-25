@@ -1,0 +1,15 @@
+title: Thato Thapo
+baseurl: "" # Leave empty if hosted at username.github.io
+url: "https://thatothapo.github.io/" # the base hostname & protocol for your site
+theme: minima
+
+# Enable plugins
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
