@@ -372,3 +372,40 @@ p {
     border: 2px solid #f4f4f4;
     border-radius: 5px;
 }
+
+/* Footer Styles */
+.site-footer {
+    background-color: rgba(108, 0, 0, 0.9);
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+  }
+  
+  .social-links a {
+    color: white;
+    font-size: 2.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Platform-specific colors (optional) */
+  .fa-linkedin:hover { color: #0077B5; }
+  .fa-github:hover { color: #6e5494; }
+  .fa-brands:hover { color: #1DA1F2; }
+  .fa-envelope:hover { color: #ea4335; }
+  
+  .copyright {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin-top: 20px;
+  }
