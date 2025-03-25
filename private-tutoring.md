@@ -7,7 +7,7 @@ title: Private Tutoring
 Please find below the corresponding rates for each course on offer. All the rates are up for negotiation with the exception of the Senior undergrad and Honours Courses. For more information, contact me via Email or on WhatsApp:
 
 <div class="qr-code-placeholder">
-  <img src="{{ '/assets/images/whatsapp-qr.png' | relative_url }}" alt="WhatsApp QR Code">
+  <img src="{{ '/assets/images/WhatsApp_QR.jpg' | relative_url }}" alt="WhatsApp QR Code">
 </div>
 
 <div class="tutoring-container">

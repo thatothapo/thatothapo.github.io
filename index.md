@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <div class="profile-section">
-  <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Thato Thapo" class="profile-image">
+  <img src="{{ '/assets/images/14-1M3A1935.jpg' | relative_url }}" alt="Thato Thapo" class="profile-image">
   <div class="profile-text">
     <h1>Thato Thapo</h1>
     <p>
