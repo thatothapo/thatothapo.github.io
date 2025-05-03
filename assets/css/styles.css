@@ -6,7 +6,7 @@ body {
     background-color: #6c0000; /* Fallback color */
     color: #f4f4f4;
     line-height: 1.6;
-    background-image: url("{{ '/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg' | relative_url }}");
+    background-image: url("{ 'assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg' | relative_url }");
     background-size: cover; /* Ensure the image covers the entire screen */
     background-repeat: repeat; /* Repeat the image if the page is longer */
     background-attachment: fixed; /* Keep the background fixed while scrolling */
