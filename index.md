@@ -7,8 +7,7 @@ title: Home
   <div class="profile-text">
     <h1>Thato Thapo</h1>
     <p>
-      Masters graduate in Applied Mathematics from the University of Cape Town focusing on Theoretical Cosmology. 
-      A passion for physics and championing science outreach.
+      Masters in Applied Mathematics from the University of Cape Town focusing on Theoretical Cosmology. A Mathematics and Physics Educator, championing science outreach.
     </p>
     <a href="{{ '/about' | relative_url }}" class="about-me-button">About Me</a>
   </div>

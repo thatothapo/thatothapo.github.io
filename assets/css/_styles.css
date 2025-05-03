@@ -3,10 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #6c0000; /* Fallback color */
+    /*background-color: #6c0000; */
     color: #f4f4f4;
     line-height: 1.6;
-    background-image: url("{ 'assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg' | relative_url }");
+    background: 
+      linear-gradient(rgba(108, 0, 0, 0.7), rgba(108, 0, 0, 0.7)),
+      url("{{ '/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg' | relative_url }}") fixed;
     background-size: cover; /* Ensure the image covers the entire screen */
     background-repeat: repeat; /* Repeat the image if the page is longer */
     background-attachment: fixed; /* Keep the background fixed while scrolling */
