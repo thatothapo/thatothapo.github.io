@@ -1,15 +1,13 @@
 <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
     <div class="navbar-name">
       <a href="{{ '/' | relative_url }}">Thato Thapo</a>
     </div>
-    
     <!-- Mobile Toggle Button -->
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
       <i class="fas fa-bars"></i>
     </button>
-  
-    <!-- Navigation Links -->
-    <div class="navbar-links" id="navbarLinks">
+    <div class="navbar-links">
       <a href="{{ '/blog' | relative_url }}">Blog</a>
       <a href="{{ '/projects' | relative_url }}">Projects</a>
       <a href="{{ '/outreach' | relative_url }}">Outreach & Teaching</a>

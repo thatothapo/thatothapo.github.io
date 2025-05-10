@@ -1,6 +1,10 @@
 // Toggle sidebar
 function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
     const links = document.getElementById('navbarLinks');
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
     links.classList.toggle('active');
   }
   
