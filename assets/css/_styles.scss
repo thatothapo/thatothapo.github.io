@@ -65,10 +65,10 @@ body::before {
     color: white; /* Ensure the icon is visible */
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .menu-toggle {
       display: block; /* Show on mobile */
-    }
+    /*} 
     
     .navbar-links {
       display: none;
@@ -80,7 +80,7 @@ body::before {
         display: flex;
       }
     }
-  }
+  }*/
 
 /* Navbar Name */
 .navbar-name {
