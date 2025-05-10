@@ -4,7 +4,7 @@ title: Private Tutoring
 ---
 ## Private Tutoring Services
 
-Please find below the corresponding rates for each course on offer. All the rates are up for negotiation with the exception of the Senior undergrad and Honours Courses. For more information, contact me via Email or on WhatsApp:
+Please find below the corresponding rates for each course on offer. Some rate are up for negotiation but that is at my own discretion. For more information, contact me via Email at thptha003@myuct.ac.za or on WhatsApp:
 
 <div class="qr-code-placeholder">
   <img src="{{ '/assets/images/WhatsApp_QR.jpg' | relative_url }}" alt="WhatsApp QR Code">
@@ -51,7 +51,7 @@ Please find below the corresponding rates for each course on offer. All the rate
     <ul>
         <li>Mathematics</li>
         <li>Physical Sciences</li>
-        <li>History</li>
+        <!--<li>History</li>-->
         <li>Introductory Coding and Programming</li>
     </ul>
     <p class="price">R300 per hour</p>
