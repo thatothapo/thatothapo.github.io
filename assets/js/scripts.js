@@ -1,9 +1,7 @@
 // Toggle sidebar
 function toggleMenu() {
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('overlay');
-    sidebar.classList.toggle('active');
-    overlay.classList.toggle('active');
+    const links = document.getElementById('navbarLinks');
+    links.classList.toggle('active');
   }
   
   // Close sidebar when clicking outside

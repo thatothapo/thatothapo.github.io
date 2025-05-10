@@ -429,3 +429,30 @@ p {
   .markdown-content ul {
     padding-left: 2rem;
   }
+
+  /* Mobile Menu */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Show on mobile */
+    }
+    
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem 0;
+      
+      &.active {
+        display: flex;
+      }
+    }
+  }
