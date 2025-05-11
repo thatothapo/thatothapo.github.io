@@ -8,11 +8,11 @@ body {
     line-height: 1.6;
     background: 
       linear-gradient(rgba(108, 0, 0, 0.7), rgba(108, 0, 0, 0.7)),
-      url("{{ '/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg' | relative_url }}") fixed;
+      url("/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg") fixed;
     background-size: cover; /* Ensure the image covers the entire screen */
-    background-repeat: repeat; /* Repeat the image if the page is longer */
+    background-repeat: no-repeat; /* Repeat the image if the page is longer */
     background-attachment: fixed; /* Keep the background fixed while scrolling */
-    background-blend-mode: overlay; /* Blend the image with the background color */
+    /*background-blend-mode: overlay; /* Blend the image with the background color */
 }
 
 /* Overlay to reduce image opacity */

@@ -28,7 +28,7 @@ Organisations & Groups I have been a part of, and people I have worked with.
         <div class="card">
             <h3>HEPCAT</h3>
             <p>The High Energy Physics, Cosmology and Astrophysics Theory group at UCT. A member since 2023</p>
-            <a href="hepcat.group" target="_blank" class="see-more">See more</a>
+            <a href="https://sites.google.com/view/hepcatcoza/home?authuser=0" target="_blank" class="see-more">See more</a>
         </div>
         
         <div class="card">
