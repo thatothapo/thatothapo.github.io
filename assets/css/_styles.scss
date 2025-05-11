@@ -490,13 +490,25 @@ p {
       align-items: center;
       text-align: center;
     }
+
+    .profile-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers child elements horizontally */
+        text-align: center; /* Ensures text is centered */
+        width: 100%; /* Takes full width to center properly */
+      }
   
     .profile-image {
       margin-right: 0;
       margin-bottom: 1.5rem;
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
     }
+
+    .about-me-button {
+        align-self: center; /* Centers the button */
+      }
   }
 
   /* Mobile Cards */
