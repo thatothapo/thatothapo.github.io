@@ -15,7 +15,7 @@ body {
     /*background-blend-mode: overlay; /* Blend the image with the background color */
     /* Mobile-specific background behavior */
     @media (max-width: 768px) {
-        background-attachment: fixed; /* Fallback for mobile */
+        background-attachment: scroll; /* Fallback for mobile */
         background: 
           linear-gradient(rgba(108, 0, 0, 0.4), rgba(108, 0, 0, 0.4)),
           url("/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg") center/cover no-repeat;
@@ -29,7 +29,7 @@ body {
 }
 
 /* Fix for mobile scrolling issue */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     html {
       height: 100%;
       overflow: auto;
@@ -42,7 +42,7 @@ body {
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
     }
-  }*/
+  }
 
 /* Overlay to reduce image opacity */
 body::before {
