@@ -157,7 +157,7 @@ body::before {
 .main-content {
     max-width: 1200px;
     margin: 50px auto;
-    padding: 0 2rem; 
+    padding: 0 4rem; 
     position: relative; /* Ensure it stays above the overlay */
     z-index: 1;
 }
@@ -165,7 +165,7 @@ body::before {
 .profile-section {
     display: flex;
     align-items: flex-start; /* Align items to the top */
-    gap: 2rem;
+    gap: 1rem; /* Added gap between image and text */
     margin-bottom: 3rem; /* Space below the profile section */
 }
 
