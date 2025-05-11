@@ -157,7 +157,7 @@ body::before {
 .main-content {
     max-width: 1200px;
     margin: 50px auto;
-    padding: 0 7cm; /* Push content in by 7cm on both sides */
+    padding: 0 2rem; 
     position: relative; /* Ensure it stays above the overlay */
     z-index: 1;
 }
@@ -165,6 +165,8 @@ body::before {
 .profile-section {
     display: flex;
     align-items: flex-start; /* Align items to the top */
+    gap: 2rem;
+    margin-bottom: 3rem; /* Space below the profile section */
 }
 
 .profile-image {
@@ -210,21 +212,26 @@ p {
 .cards {
     display: flex;
     justify-content: space-between;
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 50px auto;
-    padding: 0 20px;
+    padding: 0 1rem;
     position: relative; /* Ensure it stays above the overlay */
     z-index: 1;
 }
 
 .card {
     flex: 1;
-    margin: 0 10px;
-    padding: 20px;
+    /* margin: 0 10px;*/
+    padding: 2rem;
     background-color: rgba(128, 0, 0, 0.8); /* Slightly transparent */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 5px;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
 }
 
 .card h2 {
@@ -453,6 +460,7 @@ p {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      gap: 1.5rem;
     }
   
     .profile-image {
@@ -484,6 +492,6 @@ p {
 
   @media (max-width: 768px) {
     .main-content {
-      padding: 0 1.5rem;
+      padding: 0 1rem;
     }
   }
