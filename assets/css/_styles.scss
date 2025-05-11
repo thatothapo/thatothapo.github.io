@@ -7,7 +7,7 @@ body {
     color: #f4f4f4;
     line-height: 1.6;
     background: 
-      /*linear-gradient(rgba(108, 0, 0, 0.7), rgba(108, 0, 0, 0.7)),*/
+      linear-gradient(rgba(108, 0, 0, 0.9), rgba(108, 0, 0, 0.9)),
       url("/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg") fixed;
     background-size: cover; /* Ensure the image covers the entire screen */
     background-repeat: no-repeat; /* Repeat the image if the page is longer */
@@ -64,6 +64,35 @@ body::before {
     margin-right: 20px;
     color: white; /* Ensure the icon is visible */
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar {
+      padding: 10px 15px;
+    }
+    
+    .navbar-name {
+      display: block; /* Show name on mobile */
+      margin-right: auto;
+      font-size: 1rem; /* Slightly smaller on mobile */
+    }
+    
+    .navbar-links {
+      display: none; /* Hide regular links */
+    }
+    
+    .menu-toggle {
+      display: block; /* Show menu toggle */
+      order: 2; /* Move to far right */
+    }
+    
+    /* Show links when sidebar is active */
+    .navbar-links.active {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
 
 /* @media (max-width: 768px) {
     .menu-toggle {
@@ -501,7 +530,7 @@ p {
   
     .profile-image {
       margin-right: 0;
-      margin-bottom: 1.5rem;
+      margin-bottom: .5rem;
       width: 200px;
       height: 200px;
     }
