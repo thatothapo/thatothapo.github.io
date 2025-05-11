@@ -7,13 +7,42 @@ body {
     color: #f4f4f4;
     line-height: 1.6;
     background: 
-      linear-gradient(rgba(108, 0, 0, 0.9), rgba(108, 0, 0, 0.9)),
+      linear-gradient(rgba(108, 0, 0, 0.4), rgba(108, 0, 0, 0.4)),
       url("/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg") fixed;
     background-size: cover; /* Ensure the image covers the entire screen */
     background-repeat: no-repeat; /* Repeat the image if the page is longer */
     background-attachment: fixed; /* Keep the background fixed while scrolling */
     /*background-blend-mode: overlay; /* Blend the image with the background color */
+    /* Mobile-specific background behavior */
+    @media (max-width: 768px) {
+        background-attachment: scroll; /* Fallback for mobile */
+        background: 
+          linear-gradient(rgba(108, 0, 0, 0.4), rgba(108, 0, 0, 0.4)),
+          url("/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg") center/cover no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+      }
 }
+
+/* Fix for mobile scrolling issue */
+@media (max-width: 768px) {
+    html {
+      height: 100%;
+      overflow: auto;
+    }
+    
+    body {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
 
 /* Overlay to reduce image opacity */
 body::before {
