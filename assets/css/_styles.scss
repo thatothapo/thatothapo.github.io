@@ -285,6 +285,28 @@ p {
     margin-bottom: 15px;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .affiliations-container {
+        flex-direction: column; /* Stack columns vertically */
+        gap: 30px; /* Reduce gap between columns */
+    }
+    
+    .column {
+        width: 100%; /* Full width columns */
+        margin: 0; /* Remove side margins */
+    }
+    
+    /* Ensure People column comes after Groups & Organisations */
+    .column:last-child {
+        margin-top: 30px; /* Add space between sections */
+    }
+    
+    .column .card {
+        padding: 1.5rem; /* Slightly larger padding on mobile */
+    }
+}
+
 /* See More Link */
 .column .card .see-more {
     display: block;
