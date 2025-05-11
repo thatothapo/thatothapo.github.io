@@ -11,12 +11,12 @@ This thesis explored the implications of the Carroll limit in general relativity
 
 ### Honours Project
 **Relativistic Neutron Stars Beyond General Relativity**  
-*University of Cape Town (2022)* 
+*University of Cape Town (2022)*  
 Solving the TOV equations in General Relativity and Metric f(R) Gravity which is an extended theory of gravity, to describe static, spherically symmetric neutron stars. The TOV equations are solved using various numerical methods, and the results are used to find consistencies between the two theories of gravity.
 
 ### Design Thinking
-**Mobile Activation Truck Bringing Solution Space into the Philippi Community**
-*Hasso Plattner School of Design Thinking in Afrika (2022)*
+**Mobile Activation Truck Bringing Solution Space into the Philippi Community**  
+*Hasso Plattner School of Design Thinking in Afrika (2022)*  
 A solution devised to address a challenge faced by youth in Philippi, where Philippi Village (a building complex in the community) and Solution Space (inside Philippi Village) exist to provide resources and opportunities to the community however, community members feel intimidated by the space and the opportunities are not very visible.
 
 
