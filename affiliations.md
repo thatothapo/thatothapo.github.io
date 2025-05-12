@@ -21,7 +21,7 @@ Organisations & Groups I have been a part of, and people I have worked with.
         
         <div class="card">
             <h3>University of Cape Town</h3>
-            <p>Did my undergaduate and postgraduate studies from 2018 until 2025. Graduated with an M.Sc. in Applied Mathematics.</p>
+            <p>Did my undergraduate and postgraduate studies from 2018 until 2025. Graduated with an M.Sc. in Applied Mathematics.</p>
             <a href="https://www.news.uct.ac.za/" target="_blank" class="see-more">See more</a>
         </div>
         
@@ -45,7 +45,7 @@ Organisations & Groups I have been a part of, and people I have worked with.
         
         <div class="card">
             <h3>UCT Department of Physics</h3>
-            <p>Finished my undergraduate with a major in Physics. Undergaduate Representative and President of the Society for Physics Students in 2021</p>
+            <p>Finished my undergraduate with a major in Physics. undergraduate Representative and President of the Society for Physics Students in 2021</p>
             <a href="#" target="_blank" class="see-more">See more</a>
         </div>
         
@@ -103,7 +103,7 @@ Organisations & Groups I have been a part of, and people I have worked with.
         </div>
         
         <div class="card">
-            <h3>Nishant Gupta</h3>
+            <h3> Dr. Nishant Gupta</h3>
             <p>Collaborator. Post-doctoral researcher at the National Institute of Science Education and Research (NISER)</p>
             <a href="https://inspirehep.net/authors/2148050" target="_blank" class="see-more">See more</a>
         </div>
