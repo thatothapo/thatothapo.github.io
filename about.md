@@ -5,7 +5,7 @@ title: About Me
 
 ## About Me
 
-My name is Thato Thapo. I grew up in Soweto, Johannesburg, South Africa. I recently submitted my M.Sc. thesis in Applied Mathematics focusing on Theoretical Cosmology at the University of Cape Town. My M.Sc. project was the Carroll limit of General Relativity , this is an ultra-relativisitic limit antithetical to the Galilean limit. Before my masters, I worked on Numerical Relativity in my final Honours project. The goal here was to understand the mass-radius relation of neutron stars in a modified theory of gravity, you can read further about these in the projects page.
+My name is Thato Thapo. I grew up in Soweto, Johannesburg, South Africa. I have an M.Sc. degree in Applied Mathematics focusing on Theoretical Cosmology at the University of Cape Town. My M.Sc. project was the Carroll limit of General Relativity , this is an ultra-relativisitic limit antithetical to the Galilean limit. Before my masters, I worked on Numerical Relativity in my final Honours project. The goal here was to understand the mass-radius relation of neutron stars in a modified theory of gravity, you can read further about these in the projects page.
 
 I have a wide range of research interest beyond Classical Cosmology and General Relativity. I have explored a few ideas Conformal Gravity as well as some theories of Quantum Gravity. I have a vested interest in studying Machine Learning in Physics and how particular techniques can open doors to theories beyond General Relativity or the Standard Model. I have also studied the Early Universe extensively so there are still various avenues left to explore there.
 

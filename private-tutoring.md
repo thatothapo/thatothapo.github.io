@@ -4,7 +4,7 @@ title: Private Tutoring
 ---
 ## Private Tutoring Services
 
-Please find below the corresponding rates for each course on offer. Some rate are up for negotiation but that is at my own discretion. For more information, contact me via Email at thptha003@myuct.ac.za or on WhatsApp:
+Please find below the corresponding rates for each course on offer. Some rate are up for negotiation but that is at my own discretion. Sessions can be administered in person or online. For more information, contact me via Email at thptha003@myuct.ac.za or on WhatsApp:
 
 <div class="qr-code-placeholder">
   <img src="{{ '/assets/images/WhatsApp_QR.jpg' | relative_url }}" alt="WhatsApp QR Code">
@@ -18,8 +18,8 @@ Please find below the corresponding rates for each course on offer. Some rate ar
             <li>Advanced Quantum Mechanics</li>
             <li>Differential Geometry</li>
             <li>Cosmology</li>
-            <li>Complex Variables</li>
-            <!--<li>Electrodynamics</li>
+            <!--<li>Complex Variables</li>
+            <li>Electrodynamics</li>
             <li>Statistical Mechanics and Thermal Physics</li>
             <li>Computationl Physics</li>-->
         </ul>
