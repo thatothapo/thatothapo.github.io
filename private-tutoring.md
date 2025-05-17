@@ -57,3 +57,8 @@ Please find below the corresponding rates for each course on offer. Some rate ar
     <p class="price">R300 per hour</p>
 </div>
 </div>
+
+<div class="button-container">
+  <a href="{{ '/about' | relative_url }}" class="about-me-button">About Me</a>
+  <a href="{{ '/affiliations' | relative_url }}" class="about-me-button">Affiliations</a>
+</div>
