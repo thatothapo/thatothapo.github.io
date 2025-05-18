@@ -493,13 +493,7 @@ p {
   color: white;
   font-size: 2.2rem;
   transition: all 0.3s ease;
-}
 
-.social-links b {
-  /* Your existing styles stay exactly as they are */
-  position: relative; /* Add this line only - required for tooltip positioning */
-
-  /* New tooltip-specific styles (won't affect other icons) */
   .tooltip {
     position: absolute;
     bottom: 100%;
@@ -525,8 +519,40 @@ p {
       border-width: 5px;
       border-style: solid;
       border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
-    }
-  }
+}
+
+// .social-links b {
+//   /* Your existing styles stay exactly as they are */
+//   position: relative; /* Add this line only - required for tooltip positioning */
+
+//   /* New tooltip-specific styles (won't affect other icons) */
+//   .tooltip {
+//     position: absolute;
+//     bottom: 100%;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     background: rgba(0, 0, 0, 0.8);
+//     color: white;
+//     padding: 4px 8px;
+//     border-radius: 4px;
+//     font-size: 0.8rem;
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: all 0.3s ease;
+//     white-space: nowrap;
+//     z-index: 10;
+
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       top: 100%;
+//       left: 50%;
+//       margin-left: -5px;
+//       border-width: 5px;
+//       border-style: solid;
+//       border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+//     }
+//   }
 
   /* This only affects the email link when clicked */
   &.copied .tooltip {
