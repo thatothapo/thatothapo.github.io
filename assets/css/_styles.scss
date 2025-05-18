@@ -519,7 +519,15 @@ p {
       border-width: 5px;
       border-style: solid;
       border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    }
+  }
+    /* This only affects the email link when clicked */
+  &.copied .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
 }
+  
 
 // .social-links b {
 //   /* Your existing styles stay exactly as they are */
@@ -554,12 +562,12 @@ p {
 //     }
 //   }
 
-  /* This only affects the email link when clicked */
-  &.copied .tooltip {
-    opacity: 1;
-    visibility: visible;
-  }
-}
+//   /* This only affects the email link when clicked */
+//   &.copied .tooltip {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+// }
   
 .social-links a:hover {
   transform: translateY(-5px);
