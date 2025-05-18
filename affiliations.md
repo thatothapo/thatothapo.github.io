@@ -109,3 +109,8 @@ Organisations & Groups I have been a part of, and people I have worked with.
         </div>
     </div>
 </div>
+
+<div class="button-container">
+  <a href="{{ '/' | relative_url }}" class="about-me-button">Back to Home</a>
+  <a href="{{ '/projects' | relative_url }}" class="about-me-button">Projects</a>
+</div>

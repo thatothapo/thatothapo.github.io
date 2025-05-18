@@ -98,21 +98,44 @@ body::before {
 @media (max-width: 768px) {
     .navbar {
       padding: 10px 15px;
+      justify-content: center;
+      position: relative;
     }
     
-    .navbar-name {
-      display: block; /* Show name on mobile */
-      margin-right: auto;
-      font-size: 1rem; /* Slightly smaller on mobile */
+    .navbar-brand {
+      display: block; /* Ensure name is always visible */
+      // margin-right: auto; /* Push to left side */
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
+
+    // .navbar-name {
+    //   display: block; /* Show name on mobile */
+    //   margin-right: auto;
+    //   font-size: 1rem; /* Slightly smaller on mobile */
+    // }
     
     .navbar-links {
       display: none; /* Hide regular links */
+
+      &.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(128, 0, 0, 0.9);
+        padding: 15px;
+        gap: 15px;
+      }
     }
     
     .menu-toggle {
       display: block; /* Show menu toggle */
-      order: 2; /* Move to far right */
+      margin-left: auto;
+      // order: 2; /* Move to far right */
     }
     
     /* Show links when sidebar is active */
