@@ -21,27 +21,14 @@ function toggleMenu() {
   // Email copy function
   function copyEmail(e) {
     e.preventDefault();
-    const link = e.currentTarget;
-    
     navigator.clipboard.writeText("thptha003@myuct.ac.za")
       .then(() => {
-        // Add 'copied' class to show tooltip
         link.classList.add('copied');
-        
-        // Change icon to checkmark
-        const icon = link.querySelector('i');
-        icon.classList.replace('fa-envelope', 'fa-check');
-        
-        // Reset after 2 seconds
+        const link = e.currentTarget;
+        link.innerHTML = '<i class="fas fa-check"></i>';
         setTimeout(() => {
           link.classList.remove('copied');
-          icon.classList.replace('fa-check', 'fa-envelope');
+          link.innerHTML = '<i class="fas fa-envelope"></i>';
         }, 2000);
-      })
-      .catch(err => {
-        console.error('Failed to copy email: ', err);
-        // Optional: Show error feedback
-        link.classList.add('error');
-        setTimeout(() => link.classList.remove('error'), 2000);
       });
   }

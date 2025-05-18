@@ -510,8 +510,13 @@ p {
     color: white;
     font-size: 2.2rem;
     transition: all 0.3s ease;
-    position: relative; /* Needed for tooltip positioning */
+  }
 
+  .social-links b {
+    /* Your existing styles stay exactly as they are */
+    position: relative; /* Add this line only - required for tooltip positioning */
+
+    /* New tooltip-specific styles (won't affect other icons) */
     .tooltip {
       position: absolute;
       bottom: 100%;
@@ -526,7 +531,8 @@ p {
       visibility: hidden;
       transition: all 0.3s ease;
       white-space: nowrap;
-      
+      z-index: 10;
+
       &::after {
         content: '';
         position: absolute;
@@ -538,12 +544,13 @@ p {
         border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
       }
     }
-    
+
+    /* This only affects the email link when clicked */
     &.copied .tooltip {
       opacity: 1;
       visibility: visible;
     }
-  }
+}
   
   .social-links a:hover {
     transform: translateY(-5px);
