@@ -1,76 +1,76 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    /*background-color: #6c0000; */
-    color: #f4f4f4;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /*background-color: #6c0000; */
+  color: #f4f4f4;
+  line-height: 1.6;
+  background: 
+    linear-gradient(rgba(108, 0, 0, 0.4), rgba(108, 0, 0, 0.4)),
+    url("/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg") fixed;
+  background-size: cover; /* Ensure the image covers the entire screen */
+  background-repeat: no-repeat; /* Repeat the image if the page is longer */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+  /*background-blend-mode: overlay; /* Blend the image with the background color */
+  /* Mobile-specific background behavior */
+  @media (max-width: 768px) {
+    background-attachment: scroll; /* Fallback for mobile */
     background: 
       linear-gradient(rgba(108, 0, 0, 0.4), rgba(108, 0, 0, 0.4)),
-      url("/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg") fixed;
-    background-size: cover; /* Ensure the image covers the entire screen */
-    background-repeat: no-repeat; /* Repeat the image if the page is longer */
-    background-attachment: fixed; /* Keep the background fixed while scrolling */
-    /*background-blend-mode: overlay; /* Blend the image with the background color */
-    /* Mobile-specific background behavior */
-    @media (max-width: 768px) {
-        background-attachment: scroll; /* Fallback for mobile */
-        background: 
-          linear-gradient(rgba(108, 0, 0, 0.4), rgba(108, 0, 0, 0.4)),
-          url("/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg") center/cover no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
-      }
+      url("/assets/images/thomas-t-OPpCbAAKWv8-unsplash.jpg") center/cover no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 /* Fix for mobile scrolling issue */
 @media (max-width: 768px) {
-    html {
-      height: 100%;
-      overflow: auto;
-    }
-    
-    body {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      overflow-y: scroll;
-      -webkit-overflow-scrolling: touch;
-    }
+  html {
+    height: 100%;
+    overflow: auto;
   }
+  
+  body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 
 /* Overlay to reduce image opacity */
 body::before {
-    content: '';
-    position: fixed; /* Change from absolute to fixed */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(108, 0, 0, 0.7); /* Adjust opacity here (0.7 = 70%) */
-    z-index: -1; /* Place the overlay behind the content */
+  content: '';
+  position: fixed; /* Change from absolute to fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(108, 0, 0, 0.7); /* Adjust opacity here (0.7 = 70%) */
+  z-index: -1; /* Place the overlay behind the content */
 }
 
 /* Navigation Bar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(128, 0, 0, 0.8); /* Slightly transparent */
-    padding: 10px 20px;
-    color: white;
-    position: relative; /* Ensure it stays above the overlay */
-    z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(128, 0, 0, 0.8); /* Slightly transparent */
+  padding: 10px 20px;
+  color: white;
+  position: relative; /* Ensure it stays above the overlay */
+  z-index: 1;
 }
 
 .navbar-links a[aria-current="page"] {
-    text-decoration: underline;
-    font-weight: bolder;
+  text-decoration: underline;
+  font-weight: bolder;
   }
 
 /*
@@ -88,276 +88,259 @@ body::before {
 
 /* Menu Toggle */
 .menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 20px;
-    color: white; /* Ensure the icon is visible */
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+  color: white; /* Ensure the icon is visible */
 }
 
 /* Mobile View */
 @media (max-width: 768px) {
-    .navbar {
-      padding: 10px 15px;
-    }
-    
-    .navbar-name {
-      display: block !important; /* Show name on mobile */
-      margin-right: auto;
-      font-size: 1rem; /* Slightly smaller on mobile */
-    }
-    
-    .navbar-links {
-      display: none; /* Hide regular links */
-    }
-    
-    .menu-toggle {
-      display: block; /* Show menu toggle */
-      order: 2; /* Move to far right */
-    }
-    
-    /* Show links when sidebar is active */
-    .navbar-links.active {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
+  .navbar {
+    padding: 10px 15px;
   }
-
-/* @media (max-width: 768px) {
-    .menu-toggle {
-      display: block; /* Show on mobile */
-    /*} 
-    
-    .navbar-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      padding: 1rem 0;
-      
-      &.active {
-        display: flex;
-      }
-    }
-  }*/
+  
+  .navbar-name {
+    display: block !important; /* Show name on mobile */
+    margin-right: auto;
+    font-size: 1rem; /* Slightly smaller on mobile */
+  }
+  
+  .navbar-links {
+    display: none; /* Hide regular links */
+  }
+  
+  .menu-toggle {
+    display: block; /* Show menu toggle */
+    order: 2; /* Move to far right */
+  }
+  
+  /* Show links when sidebar is active */
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 
 /* Navbar Name */
 .navbar-name {
-    margin-right: auto; /* Push name to the right */
+  margin-right: auto; /* Push name to the right */
 }
 
 .navbar-name a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Navbar Links */
 .navbar-links {
-    display: flex;
-    gap: 20px; /* Space between links */
+  display: flex;
+  gap: 20px; /* Space between links */
 }
 
 .navbar-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Overlay for Sidebar */
 .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: 999; /* Below the sidebar but above other content */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Below the sidebar but above other content */
 }
 
 .overlay.active {
-    display: block; /* Show overlay when sidebar is active */
+  display: block; /* Show overlay when sidebar is active */
 }
 
 /* Sidebar Menu */
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Hide sidebar by default */
-    width: 250px;
-    height: 100%;
-    background-color: rgba(128, 0, 0, 0.9);
-    padding-top: 60px;
-    transition: left 0.3s ease;
-    z-index: 1000; /* Above the overlay */
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hide sidebar by default */
+  width: 250px;
+  height: 100%;
+  background-color: rgba(128, 0, 0, 0.9);
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000; /* Above the overlay */
 }
 
 .sidebar.active {
-    left: 0; /* Show sidebar when active */
+  left: 0; /* Show sidebar when active */
 }
 .sidebar a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .sidebar a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Main Content */
 .main-content {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 6rem; 
-    position: relative; /* Ensure it stays above the overlay */
-    z-index: 1;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 6rem; 
+  position: relative; /* Ensure it stays above the overlay */
+  z-index: 1;
 }
 
 .profile-section {
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-    gap: 1rem; /* Added gap between image and text */
-    margin-bottom: 3rem; /* Space below the profile section */
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  gap: 1rem; /* Added gap between image and text */
+  margin-bottom: 3rem; /* Space below the profile section */
 }
 
 .profile-image {
-    width: 250px; /* Change width */
-    height: 250px; /* Change height */
-    object-fit: cover; /* Crop the image to fit */
-    border-radius: 50%; /* Make the image circular */
-    margin-right: 20px; /* Space between image and text */
-    border: 3px solid rgba(128, 0, 0, 0.45); /* Border color matches card background */
+  width: 250px; /* Change width */
+  height: 250px; /* Change height */
+  object-fit: cover; /* Crop the image to fit */
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 20px; /* Space between image and text */
+  border: 3px solid rgba(128, 0, 0, 0.45); /* Border color matches card background */
 }
 
 .profile-text {
-    flex: 1;
-    text-align: left; /* Align text to the left */
+  flex: 1;
+  text-align: left; /* Align text to the left */
 }
 
 
 h1 {
-    color: #f4f4f4;
-    margin-bottom: 20px;
+  color: #f4f4f4;
+  margin-bottom: 20px;
 }
 
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .about-me-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #b10000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #b10000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .about-me-button:hover {
-    background-color: #800000;
+  background-color: #800000;
 }
 
 /* Cards Section */
 .cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 1rem;
-    position: relative; /* Ensure it stays above the overlay */
-    z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 1rem;
+  position: relative; /* Ensure it stays above the overlay */
+  z-index: 1;
 }
 
 .card {
-    flex: 1;
-    /* margin: 0 10px;*/
-    padding: 2rem;
-    background-color: rgba(128, 0, 0, 0.8); /* Slightly transparent */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 5px;
+  flex: 1;
+  /* margin: 0 10px;*/
+  padding: 2rem;
+  background-color: rgba(128, 0, 0, 0.8); /* Slightly transparent */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 5px;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Subtle hover effect */
+  transform: translateY(-5px); /* Subtle hover effect */
 }
 
 .card h2 {
-    color: #f4f4f4;
-    margin-bottom: 20px;
+  color: #f4f4f4;
+  margin-bottom: 20px;
 }
 
 .card a {
-    color: #f4f4f4;
-    text-decoration: none;
-    font-weight: bold;
+  color: #f4f4f4;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .card a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Affiliations Page Styles */
 .affiliations-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    gap: 90px; /* Add space between columns */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 90px; /* Add space between columns */
 }
 
 .column {
-    flex: 1;
-    margin: 0 10px;
+  flex: 1;
+  margin: 0 10px;
 }
 
 .column h2 {
-    color: #f4f4f4;
-    margin-bottom: 20px;
+  color: #f4f4f4;
+  margin-bottom: 20px;
 }
 
 .column .card {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: rgba(128, 0, 0, 0.8);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(128, 0, 0, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .column .card h3 {
-    color: #f4f4f4;
-    margin-bottom: 10px;
+  color: #f4f4f4;
+  margin-bottom: 10px;
 }
 
 .column .card p {
-    color: #f4f4f4;
-    margin-bottom: 15px;
+  color: #f4f4f4;
+  margin-bottom: 15px;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .affiliations-container {
-        flex-direction: column; /* Stack columns vertically */
-        gap: 30px; /* Reduce gap between columns */
+      flex-direction: column; /* Stack columns vertically */
+      gap: 30px; /* Reduce gap between columns */
     }
     
     .column {
-        width: 100%; /* Full width columns */
-        margin: 0; /* Remove side margins */
+      width: 100%; /* Full width columns */
+      margin: 0; /* Remove side margins */
     }
     
     /* Ensure People column comes after Groups & Organisations */
     .column:last-child {
-        margin-top: 30px; /* Add space between sections */
+      margin-top: 30px; /* Add space between sections */
     }
     
     .column .card {
@@ -366,270 +349,271 @@ p {
 }
 
 @media (max-width: 768px) {
-    .column .card {
-        max-width: 100%;
-        box-sizing: border-box; /* Include padding in width calculation */
-    }
+  .column .card {
+    max-width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
 }
 
 /* See More Link */
 .column .card .see-more {
-    display: block;
-    text-align: right;
-    color: #0073b1; /* Blue link color */
-    text-decoration: none;
-    font-weight: bold;
+  display: block;
+  text-align: right;
+  color: #0073b1; /* Blue link color */
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .column .card .see-more:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Button Container */
 .button-container {
-    display: flex;
-    gap: 10px; /* Space between buttons */
-    margin-top: 20px;
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px;
 }
 
 
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Show menu toggle on smaller screens */
-    }
+  .menu-toggle {
+    display: block; /* Show menu toggle on smaller screens */
+  }
 
-    .navbar div:not(.menu-toggle) {
-        display: none; /* Hide regular navigation links on smaller screens */
-    }
+  .navbar div:not(.menu-toggle) {
+    display: none; /* Hide regular navigation links on smaller screens */
+  }
 }
 
 /* Experience Container */
 .experience-container {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
 .experience-card {
-    background-color: rgba(128, 0, 0, 0.8);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(128, 0, 0, 0.8);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .experience-card h2 {
-    color: #f4f4f4;
-    margin-bottom: 10px;
+  color: #f4f4f4;
+  margin-bottom: 10px;
 }
 
 .experience-card p {
-    color: #f4f4f4;
-    margin-bottom: 10px;
-    line-height: 1.6;
+  color: #f4f4f4;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 .experience-card strong {
-    color: #f4f4f4;
-    font-weight: bold;
+  color: #f4f4f4;
+  font-weight: bold;
 }
 
 /* Tutoring Container */
 .tutoring-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .tutoring-card {
-    flex: 1;
-    min-width: 300px;
-    background-color: rgba(128, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+  background-color: rgba(128, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .tutoring-card h2 {
-    color: #f4f4f4;
-    margin-bottom: 15px;
+  color: #f4f4f4;
+  margin-bottom: 15px;
 }
 
 .tutoring-card ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .tutoring-card ul li {
-    color: #f4f4f4;
-    margin-bottom: 10px;
+  color: #f4f4f4;
+  margin-bottom: 10px;
 }
 
 .tutoring-card .price {
-    color: #f4f4f4;
-    font-weight: bold;
-    text-align: right;
-    font-size: 24px; /* Larger font size */
-    text-decoration: underline; /* Underline the price */
-    margin-top: 15px; /* Add some space above the price */
+  color: #f4f4f4;
+  font-weight: bold;
+  text-align: right;
+  font-size: 24px; /* Larger font size */
+  text-decoration: underline; /* Underline the price */
+  margin-top: 15px; /* Add some space above the price */
 }
 
 /* QR Code Placeholder */
 .qr-code-placeholder {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .qr-code-placeholder img {
-    width: 150px;
-    height: 150px;
-    border: 2px solid #f4f4f4;
-    border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #f4f4f4;
+  border-radius: 5px;
 }
 
 /* Footer Styles */
 .site-footer {
-    background-color: rgba(108, 0, 0, 0.9);
-    padding: 40px 0;
-    text-align: center;
-    margin-top: 80px;
-  }
-  
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 25px;
-  }
-  
-  .social-links a {
-    color: white;
-    font-size: 2.2rem;
-    transition: all 0.3s ease;
-  }
-
-  .social-links b {
-    /* Your existing styles stay exactly as they are */
-    position: relative; /* Add this line only - required for tooltip positioning */
-
-    /* New tooltip-specific styles (won't affect other icons) */
-    .tooltip {
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-      white-space: nowrap;
-      z-index: 10;
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
-      }
-    }
-
-    /* This only affects the email link when clicked */
-    &.copied .tooltip {
-      opacity: 1;
-      visibility: visible;
-    }
+  background-color: rgba(108, 0, 0, 0.9);
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 80px;
 }
   
-  .social-links a:hover {
-    transform: translateY(-5px);
-  }
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
   
-  /* Platform-specific colors (optional) */
-  .fa-linkedin:hover { color: #0077B5; }
-  .fa-github:hover { color: #6e5494; }
-  .fa-brands:hover { color: #1DA1F2; }
-  .fa-envelope:hover { color: #ea4335; }
-  
-  .copyright {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
-    margin-top: 20px;
+.social-links a {
+  color: white;
+  font-size: 2.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-links b {
+  /* Your existing styles stay exactly as they are */
+  position: relative; /* Add this line only - required for tooltip positioning */
+
+  /* New tooltip-specific styles (won't affect other icons) */
+  .tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    z-index: 10;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    }
   }
 
-  .markdown-content {
-    line-height: 1.6;
+  /* This only affects the email link when clicked */
+  &.copied .tooltip {
+    opacity: 1;
+    visibility: visible;
   }
+}
   
-  .markdown-content h2 {
-    color: #f4f4f4;
-    margin-top: 2rem;
-  }
+.social-links a:hover {
+  transform: translateY(-5px);
+}
   
-  .markdown-content ul {
-    padding-left: 2rem;
-  }
+
+/* Platform-specific colors (optional) */
+.fa-linkedin:hover { color: #0077B5; }
+.fa-github:hover { color: #6e5494; }
+.fa-brands:hover { color: #1DA1F2; }
+.fa-envelope:hover { color: #ea4335; }
+
+.copyright {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.markdown-content {
+  line-height: 1.6;
+}
+  
+.markdown-content h2 {
+  color: #f4f4f4;
+  margin-top: 2rem;
+}
+
+.markdown-content ul {
+  padding-left: 2rem;
+}
 
   /* Mobile Profile Section */
 @media (max-width: 768px) {
-    .profile-section {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .profile-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centers child elements horizontally */
-        text-align: center; /* Ensures text is centered */
-        width: 100%; /* Takes full width to center properly */
-      }
-  
-    .profile-image {
-      margin-right: 0;
-      margin-bottom: .5rem;
-      width: 200px;
-      height: 200px;
-    }
-
-    .about-me-button {
-        align-self: center; /* Centers the button */
-      }
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .profile-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centers child elements horizontally */
+      text-align: center; /* Ensures text is centered */
+      width: 100%; /* Takes full width to center properly */
+    }
+
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: .5rem;
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-me-button {
+      align-self: center; /* Centers the button */
+    }
+}
 
   /* Mobile Cards */
 @media (max-width: 768px) {
-    .cards {
-      flex-direction: column;
-      align-items: center;
-      padding: 0 1rem;
-    }
-  
-    .card {
-      width: 100%;
-      max-width: 350px;
-      margin: 0 0 1.5rem 0;
-      
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
   }
 
-  @media (max-width: 768px) {
-    .main-content {
-      padding: 0 1.5rem;
+  .card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 0 1.5rem 0;
+    
+    &:last-child {
+      margin-bottom: 0;
     }
   }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0 1.5rem;
+  }
+}
