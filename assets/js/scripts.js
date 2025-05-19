@@ -21,14 +21,17 @@ function toggleMenu() {
   // Email copy function
   function copyEmail(e) {
     e.preventDefault();
+    const link = e.currentTarget;
     navigator.clipboard.writeText("thptha003@myuct.ac.za")
       .then(() => {
         link.classList.add('copied');
-        const link = e.currentTarget;
-        link.innerHTML = '<i class="fas fa-check"></i>';
+        const icon = link.querySelector('i');
+        // link.innerHTML = '<i class="fas fa-check"></i>';
+        icon.classList.replace('fa-envelope', 'fa-check');
         setTimeout(() => {
           link.classList.remove('copied');
-          link.innerHTML = '<i class="fas fa-envelope"></i>';
+          // link.innerHTML = '<i class="fas fa-envelope"></i>';
+          icon.classList.replace('fa-check', 'fa-envelope');
         }, 2000);
       });
   }
