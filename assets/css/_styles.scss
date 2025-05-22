@@ -28,6 +28,24 @@ body {
   }
 }
 
+/* Universal Link Styling */
+a {
+  color: #4da6ff;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: #f4f4f4;
+    text-decoration: none;
+  }
+}
+
+/* Special cases (optional) */
+.navbar-links a,
+.social-links a {
+  text-decoration: none !important;
+}
+
 /* Fix for mobile scrolling issue */
 @media (max-width: 768px) {
   html {
@@ -419,17 +437,17 @@ p {
   font-weight: bold;
 }
 
-/* Experience Card Links */
-.experience-card a {
-  color: #f8d347; /* Yellow/gold color - change this to your preferred color */
-  text-decoration: underline;
-  transition: color 0.3s ease;
+// /* Experience Card Links */
+// .experience-card a {
+//   color: #4da6ff; /* Blue link color */
+//   text-decoration: underline;
+//   transition: color 0.3s ease;
   
-  &:hover {
-    color: #f4f4f4; /* Lighter color on hover */
-    text-decoration: none;
-  }
-}
+//   &:hover {
+//     color: #f4f4f4; /* Lighter color on hover */
+//     text-decoration: none;
+//   }
+// }
 
 /* Tutoring Container */
 .tutoring-container {
