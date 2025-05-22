@@ -10,5 +10,5 @@ Coming soon!
 - Gifs
 
 <div class="button-container">
-  <a href="{{ '/pgce/poster' | relative_url }}" class="about-me-button">Poster</a>
+  <a href="{{ '/pgce/posters' | relative_url }}" class="about-me-button">Poster</a>
 </div>
