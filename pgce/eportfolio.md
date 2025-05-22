@@ -4,12 +4,12 @@ title: EPortfolio
 ---
 <div class="profile-section">
   <div class="profile-text">
-    <h1>Thato Thapo: E-Portfolio</h1>
+    <h1>Mathematics Utopia</h1>
     <p>
       Welcome to my E-Portfolio.
     </p>
     <p>
-      Thato Thapo<br>
+      Name: Thato Thapo<br>
       Student Number: THPTHA003<br>
       Subject: Mathematics 
     </p>
