@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+  {% include pgcenavbar.html %}
+  {% include sidebar.html %}
+
+  <main class="main-content">
+    {{ content }} <!-- Content injects here -->
+  </main>
+
+  {% include footer.html %}
+  
+  <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+</body>
+</html>
