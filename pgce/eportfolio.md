@@ -8,7 +8,7 @@ title: EPortfolio
     <p>
       Welcome to my E-Portfolio
     </p>
-    <a href="{{ '/about' | relative_url }}" class="about-me-button">About Me</a>
+    <a href="{{ '/pgce/bio' | relative_url }}" class="about-me-button">About Me</a>
   </div>
 </div>
 
