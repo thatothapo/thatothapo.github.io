@@ -9,8 +9,8 @@ title: EPortfolio
       Welcome to my E-Portfolio.
     </p>
     <p>
-      Thato Thapo 
-      Student Number: THPTHA003 
+      Thato Thapo<br>
+      Student Number: THPTHA003<br>
       Subject: Mathematics 
     </p>
     <a href="{{ '/pgce/bio' | relative_url }}" class="about-me-button">About Me</a>
