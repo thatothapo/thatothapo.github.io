@@ -419,6 +419,18 @@ p {
   font-weight: bold;
 }
 
+/* Experience Card Links */
+.experience-card a {
+  color: #f8d347; /* Yellow/gold color - change this to your preferred color */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: #f4f4f4; /* Lighter color on hover */
+    text-decoration: none;
+  }
+}
+
 /* Tutoring Container */
 .tutoring-container {
   display: flex;
