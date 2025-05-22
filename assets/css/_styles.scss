@@ -629,6 +629,23 @@ p {
   padding-left: 2rem;
 }
 
+/* Google Classroom Image Styling */
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .markdown-content img {
+    margin: 1rem auto;
+  }
+}
+
   /* Mobile Profile Section */
 @media (max-width: 768px) {
   .profile-section {
