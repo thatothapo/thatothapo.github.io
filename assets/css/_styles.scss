@@ -704,14 +704,17 @@ p {
   }
 }
 
-/* PDF Viewer Styles */
-.pdf-viewer {
+/* Unified embed styling */
+.pdf-viewer,
+.doc-viewer {
   border: 1px solid rgba(128, 0, 0, 0.3);
   border-radius: 8px;
   margin: 2rem 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-height: 500px;
   
   @media (max-width: 768px) {
     height: 400px; /* Shorter on mobile */
+    min-height: unset;
   }
 }
