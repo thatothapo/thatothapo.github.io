@@ -718,3 +718,16 @@ p {
     min-height: unset;
   }
 }
+
+/* Excel Embed Styling */
+.excel-embed {
+  border: 1px solid rgba(128, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: white; /* Improves visibility */
+  
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+}
