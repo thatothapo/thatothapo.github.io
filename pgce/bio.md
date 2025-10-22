@@ -5,7 +5,7 @@ title: Bio
 
 ## About Me
 
-My name is Thato Thapo. I grew up in Soweto, Johannesburg, South Africa. I hold a B.Sc. in Physics and Applied Mathematics with an Honours in Applied Mathematics. I have also completed an M.Sc. in Applied Mathematics focusing on Theoretical Cosmology at the University of Cape Town as a recipient of the Exness Fintech Scholarship. I am currently doing a Postgraduate Certificate in Education, specializing in teaching Mathematics as well as research in Math Education.
+I grew up in Soweto, Johannesburg, South Africa. I hold an M.Sc. in Applied Mathematics focusing on Theoretical Cosmology from the University of Cape Town as a recipient of the Exness Fintech Scholarship. I am currently doing a Postgraduate Certificate in Education, specializing in teaching Mathematics as well as research in Math Education.
 
 My research interests are quite broad. I have worked in Theoretical and Computational Cosmology, as well as a few theories in physics beyond the Standard Model. I am interested in Machine Learning in Physics as well as some theories of Quantum Gravity, and in mathematics education, I am currently studying how learners in the senior phase learn to understand algebraic expressions.
 
