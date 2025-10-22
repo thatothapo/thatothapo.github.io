@@ -5,6 +5,10 @@ title: Bio
 
 ## About Me
 
+<div class="bio-image">
+  <img src="{{ '/assets/images/YolisaPalesaPhotography-0669.jpg' | relative_url }}" alt="Thato Thapo">
+</div>
+
 I grew up in Soweto, Johannesburg, South Africa. I hold an M.Sc. in Applied Mathematics focusing on Theoretical Cosmology from the University of Cape Town as a recipient of the Exness Fintech Scholarship. I am currently doing a Postgraduate Certificate in Education, specializing in teaching Mathematics as well as research in Math Education.
 
 My research interests are quite broad. I have worked in Theoretical and Computational Cosmology, as well as a few theories in physics beyond the Standard Model. I am interested in Machine Learning in Physics as well as some theories of Quantum Gravity, and in mathematics education, I am currently studying how learners in the senior phase learn to understand algebraic expressions.

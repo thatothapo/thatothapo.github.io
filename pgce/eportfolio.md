@@ -16,3 +16,7 @@ title: EPortfolio
     <a href="{{ '/pgce/bio' | relative_url }}" class="about-me-button">About Me</a>
   </div>
 </div>
+
+<div class="landscape-image">
+  <img src="{{ '/assets/images/YolisaPalesaPhotography-0585.jpg' | relative_url }}" alt="Mathematics Education">
+</div>

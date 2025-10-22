@@ -755,3 +755,40 @@ p {
     height: 350px;
   }
 }
+
+/* Landscape Image Styling */
+.landscape-image,
+.bio-image {
+  margin: 2rem 0;
+  text-align: center;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border: 2px solid rgba(128, 0, 0, 0.3);
+  }
+}
+
+/* Bio image specific styling */
+.bio-image img {
+  max-height: 400px; /* Prevent excessive height */
+  width: auto;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .landscape-image,
+  .bio-image {
+    margin: 1.5rem 0;
+    
+    img {
+      max-width: 95%; /* Slight margin on mobile */
+    }
+  }
+  
+  .bio-image img {
+    max-height: 300px; /* Smaller on mobile */
+  }
+}
